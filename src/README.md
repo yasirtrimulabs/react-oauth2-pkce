@@ -26,7 +26,7 @@ Long version;
 ```javascript
 import React, { useContext } from 'react'
 import ReactDOM from 'react-dom'
-import { AuthContext, AuthProvider, TAuthConfig } from "react-oauth2-code-pkce"
+import { AuthContext, AuthProvider, TAuthConfig } from "react-pkce-oauth2"
 
 const authConfig: TAuthConfig = {
   clientId: 'myClientID',
@@ -83,16 +83,16 @@ ReactDOM.render(
 
 ## Install
 
-The package is available on npmjs.com here; https://www.npmjs.com/package/react-oauth2-code-pkce
+The package is available on npmjs.com here; https://www.npmjs.com/package/react-pkce-oauth2
 
 ```bash
-npm install react-oauth2-code-pkce
+npm install react-pkce-oauth2
 ```
 
 and import
 
 ```javascript
-import { AuthContext, AuthProvider } from "react-oauth2-code-pkce"
+import { AuthContext, AuthProvider } from "react-pkce-oauth2"
 ```
 ## Develop
 

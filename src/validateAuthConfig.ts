@@ -7,15 +7,15 @@ function stringIsUnset(value: any) {
 
 export function validateAuthConfig(config: TInternalConfig) {
   if (stringIsUnset(config?.clientId))
-    throw Error("'clientId' must be set in the 'AuthConfig' object passed to 'react-oauth2-code-pkce' AuthProvider")
+    throw Error("'clientId' must be set in the 'AuthConfig' object passed to 'react-pkce-oauth2' AuthProvider")
   if (stringIsUnset(config?.authorizationEndpoint))
     throw Error(
-      "'authorizationEndpoint' must be set in the 'AuthConfig' object passed to 'react-oauth2-code-pkce' AuthProvider"
+      "'authorizationEndpoint' must be set in the 'AuthConfig' object passed to 'react-pkce-oauth2' AuthProvider"
     )
   if (stringIsUnset(config?.tokenEndpoint))
     throw Error(
-      "'tokenEndpoint' must be set in the 'AuthConfig' object passed to 'react-oauth2-code-pkce' AuthProvider"
+      "'tokenEndpoint' must be set in the 'AuthConfig' object passed to 'react-pkce-oauth2' AuthProvider"
     )
   if (stringIsUnset(config?.redirectUri))
-    throw Error("'redirectUri' must be set in the 'AuthConfig' object passed to 'react-oauth2-code-pkce' AuthProvider")
+    throw Error("'redirectUri' must be set in the 'AuthConfig' object passed to 'react-pkce-oauth2' AuthProvider")
 }

@@ -80,15 +80,15 @@ const root = createRoot(container)
 root.render(
   <div style={{}}>
     <div>
-      <h1>Demo using the &apos;react-oauth2-code-pkce&apos; package</h1>
+      <h1>Demo using the &apos;react-pkce-oauth2&apos; package</h1>
       <p>
         Github:{' '}
         <a href="https://github.com/soofstad/react-oauth2-pkce">https://github.com/soofstad/react-oauth2-pkce</a>
       </p>
       <p>
         NPM:{' '}
-        <a href="https://www.npmjs.com/package/react-oauth2-code-pkce">
-          https://www.npmjs.com/package/react-oauth2-code-pkce
+        <a href="https://www.npmjs.com/package/react-pkce-oauth2">
+          https://www.npmjs.com/package/react-pkce-oauth2
         </a>
       </p>
     </div>
