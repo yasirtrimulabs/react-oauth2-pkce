@@ -83,7 +83,7 @@ root.render(
       <h1>Demo using the &apos;react-pkce-oauth2&apos; package</h1>
       <p>
         Github:{' '}
-        <a href="https://github.com/soofstad/react-oauth2-pkce">https://github.com/soofstad/react-oauth2-pkce</a>
+        <a href="https://github.com/yasirtrimulabs/react-oauth2-pkce">https://github.com/yasirtrimulabs/react-oauth2-pkce</a>
       </p>
       <p>
         NPM:{' '}

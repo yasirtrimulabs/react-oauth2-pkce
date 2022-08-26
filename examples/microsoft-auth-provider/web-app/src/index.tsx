@@ -70,7 +70,7 @@ ReactDOM.render(
       <div>
         <h1>Demo using the 'react-pkce-oauth2' package</h1>
         <p>Github: <a
-            href="https://github.com/soofstad/react-oauth2-pkce">https://github.com/soofstad/react-oauth2-pkce</a>
+            href="https://github.com/yasirtrimulabs/react-oauth2-pkce">https://github.com/yasirtrimulabs/react-oauth2-pkce</a>
         </p>
         <p>NPM: <a
             href="https://www.npmjs.com/package/react-pkce-oauth2">https://www.npmjs.com/package/react-pkce-oauth2</a>

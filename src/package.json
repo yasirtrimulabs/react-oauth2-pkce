@@ -1,6 +1,6 @@
 {
   "name": "react-pkce-oauth2",
-  "version": "1.4.2",
+  "version": "2.0.0",
   "description": "Plug-and-play react package for OAuth2 Authorization Code flow with PKCE",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soofstad/react-oauth2-pkce.git"
+    "url": "git+https://github.com/yasirtrimulabs/react-oauth2-pkce.git"
   },
   "keywords": [
     "react",
@@ -35,9 +35,9 @@
   "author": "Stig Oskar Ofstad",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/soofstad/react-oauth2-pkce/issues"
+    "url": "https://github.com/yasirtrimulabs/react-oauth2-pkce/issues"
   },
-  "homepage": "https://github.com/soofstad/react-oauth2-pkce#readme",
+  "homepage": "https://github.com/yasirtrimulabs/react-oauth2-pkce#readme",
   "files": [
     "dist/"
   ]
