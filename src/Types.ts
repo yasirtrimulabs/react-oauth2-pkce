@@ -5,7 +5,7 @@ interface TTokenRqBase {
   scope: string
   client_id: string
   redirect_uri: string
-  prompt: string
+  prompt?: string
 }
 export interface TTokenRequestWithCodeAndVerifier extends TTokenRqBase {
   code: string
@@ -56,7 +56,7 @@ export type TAuthConfig = {
   preLogin?: () => void
   postLogin?: () => void
   decodeToken?: boolean
-  prompt?: boolean
+  prompt?: string
 }
 
 export type TAzureADErrorResponse = {
@@ -74,5 +74,5 @@ export type TInternalConfig = {
   preLogin?: () => void
   postLogin?: () => void
   decodeToken: boolean
-  prompt?: boolean
+  prompt?: string
 }

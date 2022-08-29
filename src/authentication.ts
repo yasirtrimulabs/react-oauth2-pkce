@@ -21,15 +21,26 @@ export async function logIn(config: TInternalConfig) {
   // Hash and Base64URL encode the code_verifier, used as the 'code_challenge'
   generateCodeChallenge(codeVerifier).then((codeChallenge) => {
     // Set query parameters and redirect user to OAuth2 authentication endpoint
-    const params = new URLSearchParams({
-      response_type: 'code',
-      client_id: config.clientId,
-      scope: config.scope,
-      redirect_uri: config.redirectUri,
-      code_challenge: codeChallenge,
-      code_challenge_method: 'S256',
-      prompt: config.prompt ? "True" : "False"
-    })
+    const params = new URLSearchParams(
+      config.prompt
+        ? {
+            response_type: 'code',
+            client_id: config.clientId,
+            scope: config.scope,
+            redirect_uri: config.redirectUri,
+            code_challenge: codeChallenge,
+            code_challenge_method: 'S256',
+            prompt: config.prompt,
+          }
+        : {
+            response_type: 'code',
+            client_id: config.clientId,
+            scope: config.scope,
+            redirect_uri: config.redirectUri,
+            code_challenge: codeChallenge,
+            code_challenge_method: 'S256',
+          }
+    )
     // Call any preLogin function in authConfig
     if (config?.preLogin) config.preLogin()
     window.location.replace(`${config.authorizationEndpoint}?${params.toString()}`)
@@ -94,7 +105,7 @@ export const fetchTokens = (config: TInternalConfig): Promise<TTokenResponse> =>
     client_id: config.clientId,
     redirect_uri: config.redirectUri,
     code_verifier: codeVerifier,
-    prompt: config.prompt ? "True" : "False"
+    prompt: config.prompt,
   }
   return postWithXForm(config.tokenEndpoint, tokenRequest)
 }
@@ -110,7 +121,7 @@ export const fetchWithRefreshToken = (props: {
     scope: config.scope,
     client_id: config.clientId,
     redirect_uri: config.redirectUri,
-    prompt: config.prompt ? "True" : "False"
+    prompt: config.prompt,
   }
   return postWithXForm(config.tokenEndpoint, tokenRequest)
 }
